@@ -1,6 +1,6 @@
 # freebirja
 
-Simple freelance platform website build on Django. 
+Simple freelance platform website build on Django. (no styles/pure backend)
 
 ##### Make sure you have:
 1. installed pip3

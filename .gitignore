@@ -1,0 +1,5 @@
+venv
+*.pyc
+birja/__pycache__
+birja/migrations/__pycache__
+freebirja/__pycache__/

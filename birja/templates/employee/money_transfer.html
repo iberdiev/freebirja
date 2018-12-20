@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if validity %}
+<h3>  Привет Исполнитель {{ user.username }}! <br>
+  Вы выполнили задание {{task_name}}!<br>
+  Заказчик задания {{ task_author }}.
+  На ваш счёт перечислено {{ task_cost }}$.<br>
+  <a href="{% url 'home' %}"> Проверить баланс</a>
+{% else %}
+Извините, на данный момент у закачика недостаточно средств на счету.
+{% endif %}
+
+{% endblock %}

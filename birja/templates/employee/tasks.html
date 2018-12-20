@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% for task in tasks %}
+{{ task.cost }}$  |||||
+{{ task.name }}   |||||
+{{ task.description }}   |||||
+{{ task.pub_date }}  |||||
+ {{ task.author.username }}|||||
+<form method='post' action='{% url 'money_transfer'  %}' > {% csrf_token %}
+{% csrf_token %}
+   <button name='task' value="{{ task }}" type="submit">Выполнить задание</button>
+</form>
+
+ <br>
+
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html
+<body>
+
+{% if user.is_authenticated %}
+  {% if user.role == 1 %}
+  <h3>  Привет Заказчик {{ user.username }}! Ваш баланс составляет {{ user.balance }} $</h3>
+  <a href="{% url 'eelist' %}">Список Исполнителей</a>
+    <a href="{% url 'create_task' %}">Создать задачу</a>
+  {% elif user.role == 2 %}
+  <h3>  Привет Исполнитель {{ user.username }}! Ваш баланс составляет {{ user.balance }} $</h3>
+  <a href="{% url 'erlist' %}">Список Заказчиков</a>
+  <a href="{% url 'tasks' %}">Список Задач</a>
+  {% endif %}
+
+  <p><a href="{% url 'logout' %}">Log Out</a></p>
+
+{% else %}
+<h3>  You are not logged in<br></h3>
+  <a href="{% url 'login' %}">Log In</a>
+  <a href="{% url 'signup' %}"> Sign Up</a>
+{% endif %}
+
+
+</body>
+</html>
+{% endblock %}

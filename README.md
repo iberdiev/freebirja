@@ -7,6 +7,7 @@ Simple freelance platform website build on Django.
 2. installed git
 3. python3.5
 4. installed virtualenv
+5. Django==2.0.1
 
 ## Installation manual
 
@@ -26,12 +27,8 @@ virtualenv --python=/usr/bin/python3.5 myvenv
 ```
 . myvenv/bin/activate
 ```
-5. Install all required components
-```
-pip3 install -r requirements.txt
-```
-6. Run django server
+5. Run django server
 ```
 python3 manage.py runserver
 ```
-7. Browse http://127.0.0.1:8000/
+6. Browse http://127.0.0.1:8000/

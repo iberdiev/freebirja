@@ -19,9 +19,9 @@ git clone https://github.com/iberdiev/freebirja
 ```
 cd freebirja
 ```
-3. Create a virtual environment with python3.5
+3. Create a virtual environment
 ```
-virtualenv --python=/usr/bin/python3.5 myvenv
+virtualenv myvenv
 ```
 4. Activate virtual environment (for OS Linux)
 ```

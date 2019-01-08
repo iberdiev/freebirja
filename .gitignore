@@ -1,4 +1,5 @@
 venv
+myvenv
 *.pyc
 birja/__pycache__
 birja/migrations/__pycache__

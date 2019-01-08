@@ -3,3 +3,4 @@ venv
 birja/__pycache__
 birja/migrations/__pycache__
 freebirja/__pycache__/
+birja/tests/__pycache__
